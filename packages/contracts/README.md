@@ -2,10 +2,13 @@
 
 Owns shared schemas and generated contracts.
 
-Future responsibilities:
+Implemented v0:
 
 - suite schema;
 - result bundle schema;
+
+Future responsibilities:
+
 - evaluator output schema;
 - workflow/provider adapter contracts;
 - OpenAPI generated artifacts;
@@ -13,3 +16,4 @@ Future responsibilities:
 
 Contracts should be versioned before behavior depends on them.
 
+Source package: `packages/contracts/src/veritymesh_contracts/`.

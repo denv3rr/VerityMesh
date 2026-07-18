@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veritymesh"
+version = "0.1.0"
+description = "Model-agnostic AI reliability, evaluation, and evidence platform."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Denver Clark" }]
+dependencies = []
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=6.0"]
+
+[project.scripts]
+veritymesh = "veritymesh_eval_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["packages/contracts/src", "packages/eval-core/src"]
+

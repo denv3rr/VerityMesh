@@ -13,8 +13,30 @@ Hosted model calls are opt-in and must never be required for default CI.
 
 ## Current Status
 
-Initial repository scaffold. The build plan is located in
-`docs/EXECUTION_PLAN.md`. Agent operating rules live in `AGENTS.md`.
+Initial offline evaluation core. The current implementation can validate a v0
+suite, run it against the deterministic fake support workflow, score each case,
+and write a v0 result bundle without network access or a paid model key.
+
+## Quickstart
+
+Run from the repository root with the source-layout packages on `PYTHONPATH`:
+
+```powershell
+$env:PYTHONPATH = "packages/contracts/src;packages/eval-core/src"
+python -m veritymesh_eval_core validate benchmarks/support-v1/suites/fake-support-suite.json
+python -m veritymesh_eval_core run benchmarks/support-v1/suites/fake-support-suite.json --output result-bundles/support-smoke.json
+```
+
+Or install the local package in editable mode:
+
+```powershell
+python -m pip install -e .
+veritymesh run benchmarks/support-v1/suites/fake-support-suite.json --output result-bundles/support-smoke.json
+```
+
+`result-bundles/` is ignored by Git because result bundles are generated
+artifacts. The sample suite intentionally includes one missing-coverage failure
+so the first result bundle has an inspectable failed case.
 
 ## Repository Map
 

@@ -1,11 +1,12 @@
 # Core Functionality Index
 
-Status: planned. This file should become the high-level map for implemented
-core behavior. Keep it concise and link to deeper references as they are added.
+Status: initial offline core implemented. This file is the high-level map for
+implemented core behavior. Keep it concise and link to deeper references as
+they are added.
 
 ## Evaluation Core
 
-Planned responsibilities:
+Implemented:
 
 - validate versioned suites;
 - run deterministic workflows;
@@ -13,19 +14,33 @@ Planned responsibilities:
 - produce result bundles;
 - preserve evidence and failure reasons separately from aggregate summaries.
 
-Primary future package: `packages/eval-core/`.
+Primary package: `packages/eval-core/src/veritymesh_eval_core/`.
+
+References:
+
+- `docs/reference/cli.md`;
+- `docs/reference/run-lifecycle.md`;
+- `docs/reference/scorers.md`.
 
 ## Contracts
 
-Planned responsibilities:
+Implemented:
 
 - suite schema;
 - result bundle schema;
+
+Planned:
+
 - evaluator output schema;
 - provider adapter contracts;
 - telemetry event and metric conventions.
 
-Primary future package: `packages/contracts/`.
+Primary package: `packages/contracts/src/veritymesh_contracts/`.
+
+References:
+
+- `docs/reference/suite-schema.md`;
+- `docs/reference/result-bundle-schema.md`.
 
 ## Provider Adapters
 
@@ -81,4 +96,3 @@ Planned responsibilities:
 - release decision view.
 
 Primary future app: `apps/web/`.
-

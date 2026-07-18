@@ -2,16 +2,20 @@
 
 Owns deterministic evaluation behavior.
 
-Future responsibilities:
+Implemented v0:
 
 - suite validation;
 - result bundle generation;
 - exact match, substring/regex, structured-output, citation, and tool-call
   scorers;
-- score aggregation without hiding dimensions;
 - deterministic fake workflow fixtures;
 - CLI behavior for offline runs;
+
+Future responsibilities:
+
+- score aggregation without hiding dimensions;
 - golden fixtures and property tests.
 
 This package must not require network access or paid model calls.
 
+Source package: `packages/eval-core/src/veritymesh_eval_core/`.

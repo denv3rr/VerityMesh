@@ -3,19 +3,23 @@
 This file is the working contract for AI coding agents and human contributors.
 Read it before changing the repository. When it conflicts with a more specific
 document, use the more specific document only if it is newer, intentional, and
-does not weaken the project guardrails in `Project_Guidelines.md`.
+does not weaken the project guardrails in this file, `README.md`,
+`docs/EXECUTION_PLAN.md`, or `Project_Guidelines.md` when that local file is
+present.
 
 ## Source Order
 
-1. `Project_Guidelines.md` defines the product, hiring signal, architecture,
-   security bar, and scope control.
-2. `docs/EXECUTION_PLAN.md` defines milestone sequencing and acceptance gates.
-3. `docs/operations/market-and-model-watch.md` defines how to refresh market,
+1. `Project_Guidelines.md`, when present locally, defines the original product,
+   hiring signal, architecture, security bar, and scope control. It may be
+   omitted from public commits.
+2. `README.md` defines the public project entry point and runnable commands.
+3. `docs/EXECUTION_PLAN.md` defines milestone sequencing and acceptance gates.
+4. `docs/operations/market-and-model-watch.md` defines how to refresh market,
    industry, provider, and model assumptions.
-4. ADRs in `docs/adr/` explain approved architecture choices.
-5. `docs/reference/` defines lookup documentation for stable public contracts,
+5. ADRs in `docs/adr/` explain approved architecture choices.
+6. `docs/reference/` defines lookup documentation for stable public contracts,
    core flows, major modules, and generated API/function references.
-6. Local package and app README files define ownership boundaries.
+7. Local package and app README files define ownership boundaries.
 
 Do not treat old market notes as current. The guideline market snapshot is dated
 July 17, 2026. Any claim about current jobs, model capabilities, pricing,
