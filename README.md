@@ -38,3 +38,9 @@ Initial repository scaffold. The build plan lives in
 - All untrusted inputs must pass strict schemas and size limits.
 - Provider-specific behavior must stay behind adapters.
 - Architecture expansions need measured evidence and an ADR.
+
+## License
+
+VerityMesh is licensed under the Apache License, Version 2.0.
+
+SPDX-License-Identifier: `Apache-2.0`
