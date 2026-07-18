@@ -13,7 +13,7 @@ Hosted model calls are opt-in and must never be required for default CI.
 
 ## Current Status
 
-Initial repository scaffold. The build plan lives in
+Initial repository scaffold. The build plan is located in
 `docs/EXECUTION_PLAN.md`. Agent operating rules live in `AGENTS.md`.
 
 ## Repository Map
